@@ -206,3 +206,8 @@ RSpec.describe "Apartments", type: :request do
   end
 end
 ```
+# PROCESS
+```
+$ rails generate resource Apartment street:string city:string state:string manager:string email:string price:string bedrooms:integer bathrooms:integer pets:string image:text user_id:integer
+$ rails db:migrate
+```
