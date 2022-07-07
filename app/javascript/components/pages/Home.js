@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { UncontrolledCarousel } from 'reactstrap'
-import './Home.scss';
+
 
 export default class Home extends Component {
   render() {
@@ -27,7 +27,7 @@ export default class Home extends Component {
             }
           ]}
         />
-        <h2>You Know It's Fancy Because It's French</h2>
+        <h2 className='fancy'>You Know It's Fancy Because It's French</h2>
         <div id='body'>
           <p>Bonjour, mon ami. I know you're thinking, "Just another apartment app." And you are kind of right. However, we only list apartments within walking distance from the best French and Creole Restaurants and Cafes in the United States. No more traveling so far to satisfy your cravings for beignets, escargot, or shrimp etouffee. You are clearly obsessed with this cuisine enough to live near these restaurants, and you have come to the right website.</p>
         </div>
