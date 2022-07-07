@@ -31,12 +31,17 @@ class Header extends Component {
           }
           {!logged_in &&
             <NavItem>
-              <a href={sign_in_route} className="nav-link">Sign In</a>
+              <a href={sign_in_route} className="nav-link"> Sign In </a>
             </NavItem>
           }
           {!logged_in &&
             <NavItem>
-              <a href={new_user_route} className="nav-link">Create an Account</a>
+              <a href={new_user_route} className="nav-link"> Create an Account </a>
+            </NavItem>
+          }
+          {logged_in &&
+            <NavItem>
+             <NavLink className='page-links' to='/myapartments'> My Apartments </NavLink>
             </NavItem>
           }
         </Nav>
