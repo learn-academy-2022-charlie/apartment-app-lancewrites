@@ -1,6 +1,8 @@
 .carousel{
-    height: 400px;
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
 }
 
 #home-div{
@@ -11,10 +13,12 @@
 h2{
     font-size: 40px;
     margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .item{
-    height: 400px;
+    height: 10vw;
 }
 #body{
     margin: 0 30% 40px 30%;

@@ -6,7 +6,7 @@ export default class Home extends Component {
   render() {
     return (
       <div id='home-div'>
-        <UncontrolledCarousel
+        <UncontrolledCarousel style={{ width: '3rem' }}
         interval='10000'
         className='carousel'
           items={[
