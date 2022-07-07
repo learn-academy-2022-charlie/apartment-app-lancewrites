@@ -33,14 +33,14 @@ describe("When ApartmentIndex renders", () => {
   }
   let apartmentProtectedIndexRender
   beforeEach(() => {
-    apartmentIndexRender = shallow(<ApartmentProtectedIndex {...props} />)
+    apartmentProtectedIndexRender = shallow(<ApartmentProtectedIndex {...props} />)
   })
   it("displays a heading", () => {
     const apartmentProtectedIndexHeading = apartmentProtectedIndexRender.find("h3")
-    expect(apartmentProtectedIndexHeading.text()).toEqual("ApartmentIndex")
+    expect(apartmentProtectedIndexHeading.text()).toEqual("My Apartments")
   })
   it("displays a card from ReactStrap per apartment ", () => {
-    const apartmentIndexCard = apartmentIndexRender.find("Card")
-    expect(apartmentIndexCard.length).toEqual(1)
+    const apartmentProtectedIndexCard = apartmentProtectedIndexRender.find("Card")
+    expect(apartmentProtectedIndexCard.length).toEqual(1)
   })
 })

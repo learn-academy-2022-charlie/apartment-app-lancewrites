@@ -14,3 +14,31 @@
  *= require_self
  */
 @import 'bootstrap';
+
+/* Home */
+.carousel{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+}
+
+#home-div{
+    text-align: center;
+    height: 100%;
+}
+
+.fancy{
+    font-size: 40px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    height: 10vw;
+}
+#body{
+    margin: 0 30% 40px 30%;
+    text-align: center;
+}

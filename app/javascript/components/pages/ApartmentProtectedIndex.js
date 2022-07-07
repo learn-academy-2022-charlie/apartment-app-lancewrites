@@ -22,8 +22,6 @@ export default class ApartmentProtectedIndex extends Component {
                 <CardText>State: {value.state}</CardText>
                 <CardText>Manager: {value.manager}</CardText>
                 <CardText>Contact: {value.email}</CardText>
-                {/* <CardText>{value.bedrooms}</CardText>
-                <CardText>{value.bathrooms}</CardText> */}
                 <CardText>Pets: {value.pets}</CardText>
                 
                 <div className='button-container'>

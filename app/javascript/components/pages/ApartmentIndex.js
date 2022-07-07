@@ -3,6 +3,8 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
+import { NavLink } from 'react-router-dom'
+import { Nav, NavItem } from 'reactstrap'
 
 export default class ApartmentIndex extends Component {
   render() {
@@ -12,20 +14,18 @@ export default class ApartmentIndex extends Component {
       <>
         <h3>ApartmentIndex</h3>
         <div>
-          {apartments && apartments.map((value, index)=> {
+          {apartments && apartments.map((apartment)=> {
             return ( 
-            <Card key={index}>
-              <CardImg top style={{ width: '30rem' }} src={value.image} alt="Card image cap" />
+            <Card key={apartment.id}>
+              <CardImg top style={{ width: '30rem' }} src={apartment.image} alt="Card image cap" />
               <CardBody>
-                <CardTitle>Street: {value.street}</CardTitle>
-                <CardSubtitle>City: {value.city}</CardSubtitle>
-                <CardText>State: {value.state}</CardText>
-                <CardText>Manager: {value.manager}</CardText>
-                <CardText>Contact: {value.email}</CardText>
-                {/* <CardText>{value.bedrooms}</CardText>
-                <CardText>{value.bathrooms}</CardText> */}
-                <CardText>Pets: {value.pets}</CardText>
-                <Button>Button</Button>
+                <CardTitle>Street: {apartment.street}</CardTitle>
+                <CardSubtitle>City: {apartment.city}</CardSubtitle>
+                <CardText>State: {apartment.state}</CardText>
+                <CardText>Pets: {apartment.pets}</CardText>
+                <NavLink to={`/apartmentshow/${apartment.id}`}>
+                <Button>Find Out More!</Button>
+                </NavLink>
               </CardBody>
             </Card>
             )
