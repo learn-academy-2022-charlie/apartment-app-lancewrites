@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  Card, 
+  CardImg, 
+  CardText, 
+  CardBody,
+  CardTitle, 
+  CardSubtitle, 
+  Button
 } from 'reactstrap';
 
 export default class ApartmentShow extends Component {

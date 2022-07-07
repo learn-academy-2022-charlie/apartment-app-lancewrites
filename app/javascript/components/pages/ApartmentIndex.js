@@ -14,9 +14,9 @@ export default class ApartmentIndex extends Component {
       <>
         <h3>ApartmentIndex</h3>
         <div>
-          {apartments && apartments.map((apartment, index)=> {
+          {apartments && apartments.map((apartment)=> {
             return ( 
-            <Card key={index}>
+            <Card key={apartment.id}>
               <CardImg top style={{ width: '30rem' }} src={apartment.image} alt="Card image cap" />
               <CardBody>
                 <CardTitle>Street: {apartment.street}</CardTitle>

@@ -48,7 +48,7 @@ class App extends Component {
             <Route path="/apartmentshow/:id" 
             render= {(props)=>{
             let id = props.match.params.id
-            let apartment = this.state.apartments.find((apartmentObject)=> apartmentObject.id == id)
+            let apartment = this.state.apartments.find((apartmentObject)=> apartmentObject.id === id)
             return <ApartmentShow apartment={apartment} />
             }} />
             <Route path="/apartmentnew" component={ApartmentNew} />
