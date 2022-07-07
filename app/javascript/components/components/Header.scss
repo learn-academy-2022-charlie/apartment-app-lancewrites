@@ -1,7 +1,29 @@
-//I put this in while working on the wrong Trello Card but I dont want to lose it so i commented it out
+#header-container{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: rgb(86, 40, 40);
+    justify-content:space-around;
+    z-index: 999;
+}
 
+.links {
+    display: flex;
+    justify-content: space-around;
+  }
 
-// .links {
-//     display: flex;
-//     justify-content: space-around;
-//   }
+h1{
+    color: antiquewhite;
+}
+
+.page-links{
+    display: flex;
+    justify-content: space-around;
+}
+.home-link {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+  a:hover {
+     color: rgb(170, 170, 242)
+  }
