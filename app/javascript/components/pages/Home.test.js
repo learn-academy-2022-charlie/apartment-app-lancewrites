@@ -16,8 +16,19 @@ Enzyme.configure({ adapter: new Adapter() })
 describe("When Home renders", () => {
   it("displays a heading", () => {
     const home = shallow(<Home />)
-    const homeHeading = home.find("h3")
+    const homeHeading = home.find("h2")
     console.log("HOME", homeHeading.debug());
-    expect(homeHeading.text()).toEqual("This Should Fail")
+    expect(homeHeading.text()).toEqual("You Know It's Fancy Because It's French")
+  })
+  it("displays an image carousel", () => {
+    const home = shallow(<Home />)
+    const homeCarousel = home.find("UncontrolledCarousel")
+    console.log("HOME", homeCarousel.debug());
+    expect(homeCarousel.length).toEqual(1)
+  })
+  it("displays a paragraph element with a brief description", () => {
+    const home = shallow(<Home />)
+    const homeParagraph = home.find("p")
+    expect(homeParagraph.length).toEqual(1)
   })
 })
